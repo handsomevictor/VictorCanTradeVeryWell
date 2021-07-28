@@ -1,0 +1,2 @@
+获取全部A股ticker的列表：
+from data_preparation.general_data_for_use import a_share_ticker_list
