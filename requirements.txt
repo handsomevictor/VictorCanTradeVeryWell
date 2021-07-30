@@ -1,0 +1,8 @@
+Babel==2.9.0
+bs4==0.0.1
+jqdatasdk==1.8.10
+matplotlib==3.4.2
+numpy==1.21.1
+pandas==0.25.3
+requests==2.26.0
+urllib3==1.26.6
