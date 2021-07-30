@@ -17,7 +17,6 @@ pip install -i https://test.pypi.org/simple/ VictorCanTradeVeryWell==0.0.2
 **Then write something like this:**
 
 ```python
-Import the packages
 import datetime
 import VictorCanTradeVeryWell as vtw
 
