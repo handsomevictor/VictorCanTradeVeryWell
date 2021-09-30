@@ -30,4 +30,4 @@ vtw.LimitRelated(choice='customize', date=yesterday, direction='higher', percent
 
 
 
-I will add many more functions & integrated strategies & demo backtesting system & a dashboard (for users to plan all things that he wants to see) and update the depository before September.
+I will add many more functions & integrated strategies & demo backtesting system & a dashboard (for users to plan all things that he wants to see) and update the depository in October.
