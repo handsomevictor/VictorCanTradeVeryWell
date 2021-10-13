@@ -2,7 +2,7 @@
 
 A Python open source package that can help people better monitor and analyze the financial market.
 
-I will finish it soon! (lol I said that one month ago)
+I will finish it soon! (lol I said that last month)
 
 This version is for test and it was uploaded on test.pypi.org. It has some basic functions and one can write something like the following:
 
