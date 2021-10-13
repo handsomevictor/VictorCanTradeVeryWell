@@ -28,7 +28,7 @@ yesterday = today - datetime.timedelta(1)
 vtw.LimitRelated(choice='customize', date=yesterday, direction='higher', percentage=0.09).result
 ```
 
-**Now you can see directly which A-share stocks skyrocketed by 9% yesterday and their corresponding industries (in DataFrame type).**
+**Now you can see directly which A-share stocks skyrocketed by 9% yesterday and their corresponding industries.**
 
 
 
