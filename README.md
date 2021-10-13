@@ -2,6 +2,8 @@
 
 A Python open source package that can help people better monitor and analyze the financial market.
 
+I will finish it soon! (lol I said that one month ago)
+
 This version is for test and it was uploaded on test.pypi.org. It has some basic functions and one can write something like the following:
 
 
@@ -30,4 +32,4 @@ vtw.LimitRelated(choice='customize', date=yesterday, direction='higher', percent
 
 
 
-I will add many more functions & integrated strategies & demo backtesting system & a dashboard (for users to plan all things that he wants to see) and update the depository in October.
+I will add many more functions & integrated strategies & demo backtesting system & a dashboard (for users to plan all things that he wants to see) and update the depository soon.
