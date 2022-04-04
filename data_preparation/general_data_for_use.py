@@ -2,11 +2,16 @@
 import datetime
 import os
 import pandas as pd
+from VictorCanTradeVeryWell.data_preparation.get_a_share_all_tickers import get_a_share_all_tickers
+from VictorCanTradeVeryWell.logging_records.logging_tool import logging_records
+from VictorCanTradeVeryWell.logging_records import logging_address
 
+import jqdatasdk as jq
+from VictorCanTradeVeryWell.general_processing.save_csv_file import save_csv_file
+import datetime
 
 # 这个方法仅用于获取A股所有纯股票代码，返回值是list格式
 def get_all_pure_tickers():
-    from VictorCanTradeVeryWell.data_preparation.get_a_share_all_tickers import get_a_share_all_tickers
 
     today = datetime.date.today()
     today_string = today.__format__('%Y-%m-%d')
@@ -35,12 +40,6 @@ def get_all_pure_tickers():
 
 # 本函数返回输入的股票代码在某天到某天的价格信息
 def get_ticker_price_information(stock_list, start_date, end_date, frequency):
-    from VictorCanTradeVeryWell.logging_records.logging_tool import logging_records
-    from VictorCanTradeVeryWell.logging_records import logging_address
-
-    import jqdatasdk as jq
-    from VictorCanTradeVeryWell.general_processing.save_csv_file import save_csv_file
-    import datetime
 
     field = ['open', 'close', 'low', 'high', 'volume', 'money', 'factor',
              'high_limit', 'low_limit', 'avg', 'pre_close', 'paused',
