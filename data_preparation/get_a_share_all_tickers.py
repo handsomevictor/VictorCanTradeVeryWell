@@ -1,17 +1,17 @@
 # 这是用于存储所有上市公司名字，代码，上市时间，四字母代码等
 # 文件保存到../data/a_share/all_ticker_data中
 # 本方法返回的是标准DataFrame，不是list
+import jqdatasdk as jq
+import datetime
+import os
+import pandas as pd
+from VictorCanTradeVeryWell.logging_records import logging_address
+# 导入存储日志的direction
+from VictorCanTradeVeryWell.logging_records.logging_tool import logging_records
+# 导入自动保存数据的方法
+from VictorCanTradeVeryWell.general_processing.save_csv_file import save_csv_file
 
 def get_a_share_all_tickers():
-    import jqdatasdk as jq
-    import datetime
-    import os
-    import pandas as pd
-    from VictorCanTradeVeryWell.logging_records import logging_address
-    # 导入存储日志的direction
-    from VictorCanTradeVeryWell.logging_records.logging_tool import logging_records
-    # 导入自动保存数据的方法
-    from VictorCanTradeVeryWell.general_processing.save_csv_file import save_csv_file
 
     today = datetime.date.today()
     today_string = today.__format__('%Y-%m-%d')
