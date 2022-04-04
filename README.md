@@ -1,6 +1,6 @@
 # VictorCanTradeVeryWell
 
-(!!! Attention, becasue the API and data providing website went down on 2022 Feb, this package did not work anymore. I deleted many files and new version will be released soon I hope!)
+(!!! **Attention, becasue the API and data providing website went down on 2022 Feb, this package did not work anymore. I deleted many files and new version will be released soon I hope!**)
 
 A Python open source package that can help people better monitor and analyze the financial market.
 
