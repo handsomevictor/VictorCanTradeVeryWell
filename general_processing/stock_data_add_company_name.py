@@ -1,11 +1,11 @@
 # 这个文件是为了使其他主要方法中输出的DataFrame中包含公司名称
 # 输入值为标准格式的DataFrame，输出为增加一列Chinese_name为对应的公司中文名字
+from VictorCanTradeVeryWell.data_preparation.general_data_for_use import get_all_pure_tickers
+import datetime
+import os
+import pandas as pd
 
 def stock_data_add_company_name(dataframe):
-    from VictorCanTradeVeryWell.data_preparation.general_data_for_use import get_all_pure_tickers
-    import datetime
-    import os
-    import pandas as pd
 
     ticker_list = dataframe['code']
 
