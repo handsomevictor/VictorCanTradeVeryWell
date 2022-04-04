@@ -1,10 +1,9 @@
 # 以后调用这个结果就能直接返回所有行业名
 # 调用的时候第一个是行业名，第二个是行业代码
+import jqdatasdk as jq
 
 def get_all_industry(date):
-    import jqdatasdk as jq
     industry_classification_data = jq.get_industries(name='sw_l1', date=date)
-
     return list(industry_classification_data.iloc[:, 0]), list(industry_classification_data.index)
 
 
