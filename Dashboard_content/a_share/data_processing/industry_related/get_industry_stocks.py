@@ -1,10 +1,10 @@
 # 运行本代码可以生成一个DataFrame，里面包含了所有行业的所有的股票
+import jqdatasdk as jq
+from VictorCanTradeVeryWell.Dashboard_content.a_share.data_processing.industry_related.get_all_industry import get_all_industry
+import datetime
+import pandas as pd
 
 def get_industry_stocks():
-    import jqdatasdk as jq
-    from VictorCanTradeVeryWell.Dashboard_content.a_share.data_processing.industry_related.get_all_industry import get_all_industry
-    import datetime
-    import pandas as pd
 
     today = datetime.date.today()
     all_industry = get_all_industry(today)
